@@ -1,0 +1,152 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(232, 236, 238);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #323232;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.quadrado {
+    background-color: #fff;
+    padding: 10px;
+    width: 400px;
+    padding: 20px 30px;
+    margin-top: 20vh;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 100%;
+    border: 1px solid rgb(199, 205, 212);
+}
+
+
+/* input[type="submit"] {
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    width: 282px;
+    height: 50px;
+    padding: 10px;
+    background-color: #08558b;
+    cursor: pointer;
+    color: #fff;
+    font-size: 110%;
+} */
+
+.enviar {
+    padding: 15px 10px 10px 10px;
+    font-weight: bold;
+    border: none;
+    display: block;
+    width: 282px;
+    height: 50px;
+    background-color: #08558b;
+    cursor: pointer;
+    color: #fff;
+    font-size: 140%;
+    text-decoration: none;
+}
+
+input {
+    border: 2px solid #08558b;
+    padding: 20px;
+    margin: 5px;
+}
+
+.header {
+    display: flex;
+    background-color: #08558b;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.logo {
+    height: 140px;
+    width: 190px;
+}
+
+footer {
+    background-color: #08558b;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    padding-top: 20px;
+    bottom: 0;
+    position: fixed;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    /* width: 400px;
+    position: relative;
+    margin: auto;
+    padding: 15px 20px;
+    background: #fff; */
+} 
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+    text-decoration: none;
+}
+
+div.modal {
+    width: 380px;
+    height: 50px;
+    margin-top: 550px;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background-color: #ff4545;
+    border-radius: 50%;
+    font-size:  16px;
+    color: #8d0000;
+    text-decoration: none;
+}
+
+.fechar:link {
+    text-decoration: none;
+}
+
+@media only screen and (min-height: 380px) {
+    .painel {
+        margin-top: 120px;
+    }
+}
